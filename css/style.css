@@ -1,0 +1,248 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Heebo:wght@400;700&display=swap");
+.box-3 .experience .exp-content .exp-row .exp-right .exp-cat, .box-3 .experience .exp-content .exp-row, .box-3 .experience, .box-3, .box-2 .box-2-size .detail .detail-R .edu-body .degree, .box-2 .box-2-size .detail .detail-R .edu-body, .box-2 .box-2-size .detail .detail-L .contact, .box-2 .box-2-size .detail, .box-2 .box-2-size, .box .nama, .box {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.box-3 .experience h3, .box-2 .box-2-size .detail .detail-R h3, .box-2 .box-2-size .detail .detail-L h3 {
+  font-size: 24px;
+  color: green;
+}
+
+.box-3 .experience .exp-content .exp-row .exp-left .image img, .box .nama .nama-R img {
+  width: 100%;
+  height: auto;
+}
+
+.foot, .box-3 .experience .exp-content .exp-row .exp-right .exp-text p, .box-3 .experience .exp-content .exp-row .exp-right .exp-cat .categories p, .box .nama .nama-L p {
+  font-family: "Heebo", sans-serif;
+  font-weight: normal;
+  font-style: normal;
+}
+
+.box-3 .experience .exp-content .exp-row .exp-right .exp-cat .exp-year h4, .box-3 .experience .exp-content .exp-row .exp-right .exp-title, .box .nama .nama-L h1 {
+  font-family: "Heebo", sans-serif;
+  font-weight: bold;
+}
+
+.box-2 .box-2-size .detail .detail-R .edu-body .list, .box-2 .box-2-size .detail .detail-R .edu-body .degree, .box-2 .box-2-size .detail .detail-L .contact .text {
+  font-family: "Inter", sans-serif;
+  font-weight: normal;
+  font-style: normal;
+}
+
+.box-3 .experience h3, .box-2 .box-2-size .detail .detail-R .edu-body .school, .box-2 .box-2-size .detail .detail-R h3, .box-2 .box-2-size .detail .detail-L h3 {
+  font-family: "Inter", sans-serif;
+  font-weight: bold;
+}
+
+.box {
+  justify-content: center;
+  margin: 100px 0;
+}
+.box .nama {
+  flex-direction: row;
+  width: 70%;
+  height: auto;
+  background-color: #FFF;
+}
+.box .nama .nama-L {
+  width: 50%;
+  align-self: center;
+  height: auto;
+  color: #21243D;
+  flex-grow: 2;
+}
+.box .nama .nama-L h1 {
+  font-size: 44px;
+  line-height: 60px;
+}
+.box .nama .nama-L p {
+  font-size: 16px;
+  text-align: justify;
+  line-height: 1.4;
+}
+.box .nama .nama-R {
+  flex-grow: 1;
+  margin: 36px;
+  width: 30%;
+  text-align: center;
+  align-self: center;
+  height: auto;
+}
+.box .nama .nama-R img {
+  border-radius: 50%;
+  box-shadow: -10px 20px 2px #EDF7FA;
+}
+
+.box-2 {
+  background-color: #EDF7FA;
+}
+.box-2 .box-2-size {
+  justify-content: center;
+}
+.box-2 .box-2-size .detail {
+  flex-direction: row;
+  margin-bottom: 85px;
+  width: 70%;
+  height: auto;
+}
+.box-2 .box-2-size .detail .detail-L {
+  flex-grow: 3;
+}
+.box-2 .box-2-size .detail .detail-L h3 {
+  font-size: 18px;
+}
+.box-2 .box-2-size .detail .detail-L .contact {
+  flex-direction: row;
+  margin-bottom: 21px;
+  font-size: 16px;
+  line-height: 1.5;
+}
+.box-2 .box-2-size .detail .detail-L .contact .icon {
+  max-width: 18px;
+  align-self: center;
+  text-align: center;
+  margin-right: 16px;
+}
+.box-2 .box-2-size .detail .detail-L .contact .text {
+  max-width: 100%;
+  align-self: center;
+}
+.box-2 .box-2-size .detail .detail-R {
+  flex-grow: 1;
+}
+.box-2 .box-2-size .detail .detail-R h3 {
+  font-size: 18px;
+}
+.box-2 .box-2-size .detail .detail-R .edu-body {
+  flex-direction: column;
+}
+.box-2 .box-2-size .detail .detail-R .edu-body .school {
+  margin-bottom: 10px;
+  margin-top: 5px;
+  font-size: 16px;
+}
+.box-2 .box-2-size .detail .detail-R .edu-body .degree {
+  flex-direction: row;
+  font-size: 14px;
+  line-height: 1.5;
+}
+.box-2 .box-2-size .detail .detail-R .edu-body .degree .degree-name {
+  width: 250px;
+  font-style: oblique;
+}
+.box-2 .box-2-size .detail .detail-R .edu-body .degree .years {
+  width: 100px;
+}
+.box-2 .box-2-size .detail .detail-R .edu-body .list {
+  font-size: 14px;
+  color: #52575C;
+  margin-bottom: 20px;
+}
+.box-2 .box-2-size .detail .detail-R .edu-body .list ul {
+  margin: 0 -22;
+}
+.box-2 .box-2-size .detail .detail-R .edu-body .list ul li {
+  margin: 10px 0;
+}
+
+.box-3 {
+  justify-content: center;
+}
+.box-3 .experience {
+  margin-top: 14px;
+  flex-direction: column;
+  width: 70%;
+  height: auto;
+}
+.box-3 .experience h3 {
+  font-size: 18px;
+  margin-bottom: 0;
+}
+.box-3 .experience .exp-content .exp-row {
+  height: auto;
+  width: 100%;
+  flex-direction: row;
+  justify-content: stretch;
+  border-bottom: 1px solid #E0E0E0;
+  padding-bottom: 15px;
+  padding-top: 15px;
+}
+.box-3 .experience .exp-content .exp-row .exp-left {
+  flex-grow: 1;
+  width: 20%;
+  height: auto;
+  align-self: center;
+  padding: 10px;
+}
+.box-3 .experience .exp-content .exp-row .exp-left .image img {
+  border-radius: 15px;
+}
+.box-3 .experience .exp-content .exp-row .exp-right {
+  flex-grow: 3;
+  width: 75%;
+  height: auto;
+  padding: 10px;
+  align-self: flex-start;
+}
+.box-3 .experience .exp-content .exp-row .exp-right .exp-title {
+  color: #21243D;
+  font-size: 28px;
+  line-height: 1.4;
+  text-align: justify;
+}
+.box-3 .experience .exp-content .exp-row .exp-right .exp-cat {
+  flex-direction: row;
+  height: auto;
+  margin-top: -47px;
+  margin-bottom: 50px;
+  width: 100%;
+}
+.box-3 .experience .exp-content .exp-row .exp-right .exp-cat .exp-year {
+  width: 100px;
+  height: 36px;
+  align-self: center;
+}
+.box-3 .experience .exp-content .exp-row .exp-right .exp-cat .exp-year h4 {
+  font-size: 20px;
+  text-align: center;
+  border-radius: 16px;
+  color: #FFF;
+  background-color: #142850;
+  width: 80px;
+}
+.box-3 .experience .exp-content .exp-row .exp-right .exp-cat .categories {
+  width: 200px;
+  height: 36px;
+  align-self: center;
+}
+.box-3 .experience .exp-content .exp-row .exp-right .exp-cat .categories p {
+  font-size: 24px;
+  color: #8695A4;
+}
+.box-3 .experience .exp-content .exp-row .exp-right .exp-text p {
+  font-size: 18px;
+  line-height: 1.2;
+  color: #21243D;
+  text-align: justify;
+}
+
+.foot {
+  padding-top: 21px;
+  padding-bottom: 21px;
+  text-align: center;
+  margin: 100px;
+  font-size: 16px;
+}
+.foot .social {
+  font-size: 38px;
+  line-height: 1;
+}
+.foot .social a {
+  margin: 21px;
+  color: #21243D;
+}
+
+/*# sourceMappingURL=style.css.map */

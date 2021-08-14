@@ -1,0 +1,291 @@
+//Import Links
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap');    
+@import url('https://fonts.googleapis.com/css2?family=Heebo:wght@400;700&display=swap');
+
+//Extends
+%flex-shared {
+    display: flex;
+    flex-wrap: wrap;
+}
+%form-padding {
+    padding-left: 180px;
+    padding-right: 180px;
+}
+%h3-settings {
+    font-size: 24px;
+    color: green;
+}
+%img-res {
+    width: 100%;
+    height: auto;
+}
+%heebo-norm {
+    font-family: "Heebo", sans-serif;
+    font-weight: normal;
+    font-style: normal;
+}
+%heebo-bold {
+    font-family: "Heebo", sans-serif;
+    font-weight: bold;
+}
+%inter-norm {
+    font-family: "Inter", sans-serif;
+    font-weight: normal;
+    font-style: normal;
+}
+%inter-bold {
+    font-family: "Inter", sans-serif;
+    font-weight: bold;
+}
+
+//Vars
+$white: #FFF;
+$dark: #21243D;
+$light-blue: #EDF7FA;
+$grey: #52575C;
+$light-grey: #E0E0E0;
+$dark-grey: #8695A4;
+$dark-blue: #142850;
+
+//Style CSS
+.box {
+    @extend %flex-shared;
+    justify-content: center;
+    margin: 100px 0;
+    .nama {
+        @extend %flex-shared;
+        flex-direction: row;
+        width: 70%;
+        height: auto;
+        background-color: $white;
+        .nama-L {
+            width: 50%;
+            align-self: center;
+            height: auto;
+            color: $dark;
+            flex-grow: 2;
+            h1 {
+                font-size: 44px;
+                @extend %heebo-bold;
+                line-height: 60px;
+            }
+            p {
+                @extend %heebo-norm;
+                font-size: 16px;
+                text-align: justify;
+                line-height: 1.4;
+            } 
+        }
+        .nama-R {
+            flex-grow: 1;
+            margin:36px;
+            width: 30%;
+            text-align: center;
+            align-self: center;
+            height: auto;
+            img {
+                border-radius: 50%;
+                @extend %img-res;
+                box-shadow: -10px 20px 2px $light-blue;
+            }            
+        }
+    }
+}
+.box-2 {
+    background-color: $light-blue;
+    .box-2-size {
+        @extend %flex-shared;
+        justify-content: center;
+        .detail {
+            @extend %flex-shared;
+            flex-direction: row;
+            margin-bottom: 85px;
+            width: 70%;
+            height: auto;
+            .detail-L {
+                flex-grow: 3;
+                h3 {
+                    @extend %inter-bold;
+                    @extend %h3-settings;
+                    font-size: 18px;
+                }  
+                .contact {
+                    @extend %flex-shared;
+                    flex-direction: row;
+                    margin-bottom: 21px;
+                    font-size: 16px;
+                    line-height: 1.5;
+                    .icon {
+                        max-width: 18px;
+                        align-self: center;
+                        text-align: center;
+                        margin-right: 16px;
+                    }
+                    .text {
+                        @extend %inter-norm;
+                        max-width: 100%;
+                        align-self: center;
+                    }
+                }
+                
+            }
+            .detail-R {
+                flex-grow: 1;
+                h3 {
+                    @extend %inter-bold;
+                    @extend %h3-settings;
+                    font-size: 18px;
+                }
+                .edu-body {
+                    @extend %flex-shared;
+                    flex-direction: column;
+                    .school {
+                        @extend %inter-bold;
+                        margin-bottom: 10px;
+                        margin-top: 5px;;
+                        font-size: 16px;
+                    }
+                    .degree {
+                        @extend %flex-shared;
+                        flex-direction: row;
+                        @extend %inter-norm;
+                        font-size: 14px;
+                        line-height: 1.5;
+                        .degree-name {
+                            width: 250px;
+                            font-style: oblique;
+                        }
+                        .years {
+                            width: 100px;
+                        }
+                    }
+                    .list {
+                        @extend %inter-norm;
+                        font-size: 14px;
+                        color: $grey;
+                        margin-bottom: 20px;
+                        ul {
+                            margin: 0 -22;
+                            li {
+                                margin: 10px 0;
+                            }
+                        }
+                    }        
+                }
+            }
+        }
+    }
+}
+.box-3 {
+    @extend %flex-shared;
+    justify-content: center;
+    .experience {
+        margin-top: 14px;
+        @extend %flex-shared;
+        flex-direction: column;
+        width: 70%;
+        height: auto;
+        h3 {
+            @extend %inter-bold;
+            @extend %h3-settings;
+            font-size: 18px;
+            margin-bottom: 0;
+        }
+        .exp-content {
+            .exp-row {
+                height: auto;
+                width: 100%;
+                @extend %flex-shared;
+                flex-direction: row;  
+                justify-content: stretch;
+                border-bottom: 1px solid $light-grey;
+                padding-bottom: 15px;
+                padding-top: 15px;
+                .exp-left {
+                    flex-grow: 1;
+                    width: 20%;
+                    height: auto;
+                    align-self:center;
+                    padding: 10px;
+                    .image {
+                        img{
+                            border-radius: 15px;
+                            @extend %img-res;
+                        }
+                    }
+                }
+                .exp-right {
+                    flex-grow: 3;
+                    width: 75%;
+                    height: auto;
+                    padding: 10px;
+                    align-self: flex-start;
+                    .exp-title {
+                        color: $dark;
+                        @extend %heebo-bold;
+                        font-size: 28px;
+                        line-height: 1.4;
+                        text-align: justify;    
+                    }
+                    .exp-cat {
+                        @extend %flex-shared;
+                        flex-direction: row;
+                        height: auto ;
+                        margin-top: -47px;
+                        margin-bottom: 50px;
+                        width: 100%;
+                        .exp-year {
+                            width: 100px;
+                            height: 36px;
+                            align-self: center;
+                            h4 {
+                                @extend %heebo-bold;
+                                font-size: 20px;
+                                text-align: center;
+                                border-radius: 16px;
+                                color: $white;
+                                background-color: $dark-blue;
+                                width: 80px;
+                            }
+                        }
+                        .categories {
+                            width: 200px;
+                            height: 36px;
+                            align-self: center;
+                            p {
+                                @extend %heebo-norm;
+                                font-size: 24px;
+                                color: $dark-grey;
+                            }
+                        }
+                    }
+                    .exp-text {
+                        p {
+                            @extend %heebo-norm;
+                            font-size: 18px;
+                            line-height: 1.2;
+                            color: $dark;
+                            text-align: justify;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+.foot {
+    padding-top: 21px;
+    padding-bottom: 21px;
+    text-align: center;
+    margin: 100px;
+    @extend %heebo-norm;
+    font-size: 16px;
+    .social {
+        font-size: 38px;
+        line-height: 1;
+        a {
+            margin: 21px;
+            color: $dark;
+        }
+    }
+}
